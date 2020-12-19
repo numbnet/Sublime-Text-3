@@ -2,6 +2,7 @@
 	"binary_file_patterns":
 	[
 	],
+	"color_scheme": "Packages/Material Monokai/MaterialMonokai.tmTheme",
 	"file_exclude_patterns":
 	[
 		"*.a",
@@ -25,5 +26,7 @@
 	"font_size": 10,
 	"ignored_packages":
 	[
-	]
+	],
+	"theme": "Monokai Pro.sublime-theme",
+	"theme_font_options": "Monokai"
 }
