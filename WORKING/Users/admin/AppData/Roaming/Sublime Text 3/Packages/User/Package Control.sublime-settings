@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AutoFileName",
+		"BracketHighlighter",
+		"ColorPicker",
+		"CSScomb",
+		"DlangAutoFileName",
+		"Emmet",
+		"FTPSync",
+		"Markdown Extended",
+		"One Dark Material - Theme",
+		"Package Control",
+		"PackageSync",
+		"PowerShell",
+		"Sass",
+		"Theme - One Dark"
+	]
+}

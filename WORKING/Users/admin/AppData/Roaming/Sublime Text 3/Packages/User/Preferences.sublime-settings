@@ -1,0 +1,29 @@
+{
+	"binary_file_patterns":
+	[
+	],
+	"file_exclude_patterns":
+	[
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns":
+	[
+	],
+	"font_size": 10,
+	"ignored_packages":
+	[
+	]
+}
