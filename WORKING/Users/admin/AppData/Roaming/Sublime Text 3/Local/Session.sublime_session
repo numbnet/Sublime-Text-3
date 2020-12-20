@@ -8,11 +8,11 @@
 		"/E/project/webits/mag"
 	],
 	"last_version": 3176,
-	"last_window_id": 7,
+	"last_window_id": 12,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 421.0,
+		"new_window_height": 478.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -32,15 +32,23 @@
 				"selected_items":
 				[
 					[
+						"Package Control: rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					],
+					[
 						"Package Control: ",
 						"Package Control: Install Package"
 					],
 					[
-						"Package Control: inst",
+						"Package Control: insta",
 						"Package Control: Install Package"
 					],
 					[
-						"Package Control: insta",
+						"Package Control: inst",
 						"Package Control: Install Package"
 					]
 				],
@@ -115,7 +123,7 @@
 			},
 			"input":
 			{
-				"height": 39.0
+				"height": 49.0
 			},
 			"menu_visible": true,
 			"output.find_results":
@@ -159,13 +167,13 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 294.0,
+			"side_bar_width": 285.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			}
 		},
-		"new_window_width": 1075.0
+		"new_window_width": 1235.0
 	},
 	"windows":
 	[
@@ -179,99 +187,84 @@
 			"buffers":
 			[
 				{
-					"file": "/E/scripts/sh/asterisk/install.asterisk.sh",
+					"file": "m/ftpsync.settings",
 					"settings":
 					{
-						"buffer_size": 263,
+						"buffer_size": 4865,
 						"encoding": "UTF-8",
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"contents": "\n#### =======================================================================\n### Кастомизации Termux\napt install zsh micro wget curl\nsh -c \"$(curl -fsSL https://github.com/numbnet/termux-ohmyzsh/raw/master/install.sh)\"\ngit clone https://github.com/numbnet/Termux-Banner\ncd Termux-Banner/zsh\nchmod +x requirement.sh t-ban.sh\nbash requirement.sh\nbash t-ban.sh\n\n#### =======================================================================\n### прикручивать плюшки к shell zsh:\ngit clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions\ngit clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting\ngit clone https://github.com/numbnet/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions\n\n# В termux вводим\ncd $HOME\n\n# Идем на пасту то есть сюда \nwget https://gist.githubusercontent.com/numbnet/16283d639aa316c8a1925c779dbd225c/raw/eaac410027e9cb898bed897e6d56f0fe8464ac8b/.zshrc.sh\n \n\n#Удалем все настройки которые по дефолту, чтоб быстрей удалить, выполните команду в termux\ncat .zshrc.sh > .zshrc\n\n### Теперь вам доступны такие команды как:\ngoogle текст поиска\t\t#Открывает браузер с вашим запросом в google\n\nlcd path/to/dir\t\t#переходит в каталог и сразу показывает файлы == cd && ls\n\n#Чтоб поменять цвет\n~/.termux/colors.sh\n\n#Чтоб поменять шрифт\n~/.termux/fonts.sh\n\n\n\n\n\n\n\n\n\n",
-					"file": "/E/scripts/termux/4pda/install.01.sh",
-					"file_size": 1879,
-					"file_write_time": 132520151594697135,
+					"file": "m/index.php",
 					"settings":
 					{
-						"buffer_size": 1439,
-						"line_ending": "Windows"
+						"buffer_size": 420,
+						"line_ending": "Unix"
 					}
 				},
 				{
-					"contents": "\n\nIf you come from bash you might have to change your $PATH.\n# export PATH=$HOME/bin:/usr/local/bin:$PATH\n\n# Path to your oh-my-zsh installation.\nexport ZSH=$HOME/.oh-my-zsh\n\n# Set name of the theme to load --- if set to \"random\", it will\n# load a random theme each time oh-my-zsh is loaded, in which case,\n# to know which specific one was loaded, run: echo $RANDOM_THEME\n# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes\nZSH_THEME=\"agnoster\"\n\nplugins=(\n  git\n  web-search\n  zsh-completions\n  zsh-autosuggestions\n  zsh-syntax-highlighting\n)\n\nsource $ZSH/oh-my-zsh.sh\n\n# User configuration\nautoload -U compinit && compinit\n# export MANPATH=\"/usr/local/man:$MANPATH\"\n\n# You may need to manually set your language environment\n# export LANG=en_US.UTF-8\n\n# Preferred editor for local and remote sessions\n# if [[ -n $SSH_CONNECTION ]]; then\n#   export EDITOR='vim'\n# else\n#   export EDITOR='mvim'w\n# fi\n\n# Compilation flags\n# export ARCHFLAGS=\"-arch x86_64\"\n\n# ssh\n# export SSH_KEY_PATH=\"~/.ssh/rsa_id\"\n\n# Set personal aliases, overriding those provided by oh-my-zsh libs,\n# plugins, and themes. Aliases can be placed here, though oh-my-zsh\n# users are encouraged to define aliases within the ZSH_CUSTOM folder.\n# For a full list of active aliases, run.\n\nzstyle ':completion:*' insert-tab false        # Автокомплит для первого символа\n\nHISTFILE=~/.zhistory\n## Число команд, сохраняемых в HISTFILE\nSAVEHIST=5000\n## Чucлo команд, coxpaняeмыx в сеансе\nHISTSIZE=5000\nDIRSTACKSIZE=20\n# Опции истории команд\n#Добавляет в историю время выполнения команды.\nsetopt extended_history\nalias history='fc -il 1'\n\n#История становится общей между всеми сессиями / терминалами.\nsetopt share_history\n\n# Дополнение файла истрии\nsetopt  APPEND_HISTORY\n\n#Добавить команду в историю не после выполнения а перед\nsetopt INC_APPEND_HISTORY\n\n# Игнopupoвaть вce пoвтopeнuя команд\nsetopt  HIST_IGNORE_ALL_DUPS\n\n# Удалять из файл истории пустые строки\nsetopt  HIST_REDUCE_BLANKS\n\n# команды «history» и «fc» в историю заноситься не будут\nsetopt HIST_NO_STORE\n\n# если набрали путь к директории без комманды CD, то перейти\nsetopt AUTO_CD\n\n#Сообщать при изменении статуса фонового задания\nsetopt NOTIFY\n\n#Перемещение стрелочками по выбору\n#setopt menucomplete\n#zstyle ':completion:*' menu select=1 _complete _ignored _approximate\n\n#Вести себя как в BASH\n#setopt AUTO_MENU BASH_AUTO_LIST\n\n# исправлять неверно набранные комманды\nsetopt CORRECT_ALL\n# вопрос на автокоррекцию\nSPROMPT='zsh: Заменить '\\''%R'\\'' на '\\''%r'\\'' ? [Yes/No/Abort/Edit] '\n\n\n#Можно вводить комментарии начинающиеся с #.\nsetopt interactive_comments\n\nautoload -U compinit promptinit\ncompinit\npromptinit;\n#Дополняем спрятанные .файлы:\n_comp_options+=(globdots)\n\n# экранируем спецсимволы в url, например &amp;, ?, ~ и так далее\nautoload -U url-quote-magic\nzle -N self-insert url-quote-magic\n\n# Включение поддержки выражений вроде «{1-3}» или «{a-d}» — они будут разворачиваться\n# в «1 2 3» и «a b c d» соответственно\nsetopt BRACECCL\n\n# После перехода в директорию вызываем ls.\nfunction lcd() {cd \"$1\" && ls}",
-					"file": "/E/scripts/termux/4pda/zshrc.sh",
-					"file_size": 3903,
-					"file_write_time": 132520150843588876,
+					"file": "m/wp-content/themes/furnicom/lib/plugin-requirement.php",
 					"settings":
 					{
-						"buffer_size": 3047,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "Сканер AI-BOLIT предназначен для проверки сайта на вирусы и взлом. Его можно использовать как в профилактических целях для регулярной проверки сайта на вирус, так и для поиска хакерских шеллов, бэкдоров, фишинговых страниц, вирусных вставок, дорвеев, спам-ссылок и других вредоносных фрагментов в файлах сайта.\n\nПроверка может выполняться как непосредственно на хостинге (рекомендуется запуск сканера в режиме командной строки через SSH), так и на локальном компьютере под любой операционной системой (Windows, MacOS X, *nix). Сканер AI-BOLIT проверяет файлы по собственной антивирусной базе, а также использует особые эвристические правила для обнаружения новых (пока еще не известных) вредоносных фрагментов. В случае обнаружения опасных фрагментов формирует отчет со списком обнаруженных файлов в html или текстовом формате.\n\nВ сканере есть два режима работы \"обычный\" и \"параноидальный\".\n\nДля диагностики взлома и заражения сайта достаточно проверить файлы сайта в обычном режиме. Он не дает ложных срабатываний и подходит для оценки заражения сайта или факта взлома. Для того чтобы детально проверить сайт на вирусы и хакерские скрипты, а также сформировать отчет для лечения сайта, необходимо проверять файлы в режиме \"параноидальный\". В данный отчет попадают не только известные вирусные фрагменты или хакерские скрипты, но и подозрительные фрагменты, которые необходимо изучить, так как потенциально они могут быть вредоносными.\n\nИногда одни и те же фрагменты кода могут использоваться как в хакерских скриптах, так и в легитимных скриптах CMS. Поэтому в автоматическом режиме невозможно на 100% определить, является ли файл вредоносным. Данный файл будет отображаться в отчете и необходимо вручную определить его опасность. \n\nЕсли возникают вопросы по отчету, вы всегда можете прислать его для анализа на ai@revisium.com (в .zip архиве с паролем).\n\n--\n\nПомните, что достаточно одного пропущенного шелла или бэкдора, чтобы произошел повторный взлом и заражение \nсайта, поэтому при лечении сайта используйте отчет, сформированный в \"параноидальном\" режиме и проверяйте все файлы, отмеченные \nкрасным в отчете.\n\nЕсли вы запускаете сканер в режиме командной строки, то номер режима можно задать через параметр --mode.\n\nphp ai-bolit.php --mode=1 - это проверка в обычном режиме (диагностика)\nphp ai-bolit.php --mode=2 - это проверка в параноидальном режиме (для лечения)\n\n\nПосмотрите инструкции на страницах:\n\nhttps://revisium.com/kb/ai-bolit-console-faq.html\nhttps://revisium.com/kb/ai-bolit-masterclass.html\n.\\readme.txt\n\n\nГарантированно рабочий вариант проверки - AI-BOLIT для Windows\n----------------------------------------\nhttps://revisium.com/kb/scan_site_windows.html\n\n\n\nЭкспресс-проверка (не рекомендуется для лечения сайта):\n------------------------------------------------------------------\n\n1. в файле /ai-bolit/ai-bolit.php найти строку\ndefine('PASS', '....\n\nВписать во вторых апострофах пароль, например Mypass16.\n\ndefine('PASS', 'MyPass234');\n\n2. скопировать из папки /ai-bolit/ файлы на сервер в корневой каталог\n\n3. открыть в браузере https://ваш_сайт/ai-bolit.php?p=MyPass234 и ждать отчета\n\n4. после отображения отчета удалить файлы от AI-BOLIT и сам скрипт с сайта\n\nЕсли что-то пошло не так, читаем FAQ: https://revisium.com/ai/faq.php\n\n\n\n\nПолная проверка (рекомендуется):\n--------------------------------\n\n1. скопировать из папки /ai-bolit/ файлы на сервер в корневой каталог\n\n2. подключиться к серверу по ssh, перейти в папку сайта\n\n3. выполнить команду в командной строке\n   php ai-bolit.php\n\n4. дождаться окончания сканирования\n\n5. скопировать с сервера файл AI-BOLIT-REPORT-<дата>-<время>.html\n\n\nЕсли что-то пошло не так, посмотрите раздел часто-задаваемых вопросов: https://revisium.com/ai/faq.php\n\n\n---\n\nЕсли вы не знаете, что делать с полученным отчетом, пришлите его в виде zip архива на \nai@revisium.com. Услуга \"лечение + защита сайта\" платная.\n\n\nhttps://revisium.com/ru/products/antivirus_for_ispmanager/ - Антивирус для ISPmanager Lite\nhttps://revisium.com/ru/products/antivirus_for_ispmanager/ - Антивирус для Plesk Onyx\n\nhttps://revisium.com/ai/ - официальная страница AI-BOLIT\nhttps://revisium.com - мы лечим и защищаем сайты от взлома\nhttps://revisium.com/blog/ - наш блог\nhttp://vk.com/siteprotect - группа по безопасности сайтов\nhttp://twitter.com/revisium - наш твиттер @revisium\nhttps://www.facebook.com/Revisium - наша страница в Facebook\n\n",
-					"file": "/E/Git/ai-bolit/readme.txt",
-					"file_size": 7138,
-					"file_write_time": 131956945430000000,
-					"settings":
-					{
-						"buffer_size": 4386,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/Git/ai-bolit/instruktion.txt",
-					"settings":
-					{
-						"buffer_size": 4253,
+						"buffer_size": 5508,
 						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "m/wp-content/themes/furnicom/style.css",
+					"settings":
+					{
+						"buffer_size": 782,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/project/credithouse/www.credithouse.com.ua/index.php",
+					"settings":
+					{
+						"buffer_size": 420,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "7<!DOCTYPE html>\n<html>\n<head>\n        <title>Хостинг успешно создан!</title>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <link href=\"https://fonts.googleapis.com/css?family=Roboto:300\" rel=\"stylesheet\">\n        <link rel=\"stylesheet\" href=\"//cityhost.ua/assets/css/dummy_pages.css\">\n        <link href=\"http://cityhost.ua/favicon.ico\" rel=\"shortcut icon\">\n\n</head>\n<body>\n<div id=\"center\">\n        <div class=\"info\">\n                <div class=\"logo\"></div>\n                <div class=\"title\">\n                        <p>Хостинг для домена m.webits.com.ua успешно создан</p>\n                </div>\n                <div class=\"content\">\n                        <p><b>Популярные вопросы:</b><br>\n                                <a rel='nofollow,noindex' href=\"http://faq.cityhost.ua/\" target=\"_blank\" >Раздел помощи на нашем сайте.</a><br>\n                                <a rel='nofollow,noindex' href=\"http://faq.cityhost.ua/?p=faq_new&faq_id=49\" target=\"_blank\" >Как разместить сайт на хостинг сервере.</a><br>\n                                <a rel='nofollow,noindex' href=\"http://faq.cityhost.ua/?p=faq_new&faq_id=52\" target=\"_blank\" >Настроика ФТП клиента (Пример настройки FileZilla).</a><br>\n                                <a rel='nofollow,noindex' href=\"http://faq.cityhost.ua/?p=faq_new&faq_id=172\" target=\"_blank\" >Как включить PHPmail</a><br>\n                                <a rel='nofollow,noindex' href=\"http://faq.cityhost.ua/?p=faq_new&faq_id=128\" target=\"_blank\" >Как сменить версию PHP</a><br>\n                                Кроме того, <a href='https://cityhost.ua/blog/'>в блоге CityHost вы найдете полезную информацию</a> о том, как закачать файлы сайта на хостинг, установить CMS и много другое.\n                        </p>\n                </div>\n                <div class=\"contacts bold\">\n                        <div>\n                                <span class=\"phone\">(044)&nbsp;377-74-88</span><br>\n                                <span class=\"lifecell\">(093)&nbsp;177-06-25</span><br>\n                        </div>\n                        <div>\n                                <span class=\"wodafone\">(066)&nbsp;922-59-58</span><br>\n                                <span class=\"kievstar\">(096)&nbsp;365-38-58</span><br>\n                        </div>\n                        <div>\n                                <span class=\"mail\">support@cityhost.net.ua</span><br>\n                        </div>\n                </div>\n\n                <div class=\"copyright\">&copy; CityHost - Web hosting provider</div>\n        </div>\n        </div>\n</body>\n</html>\n",
+					"file": "m/index.html",
+					"file_size": 2939,
+					"file_write_time": 132516099580000000,
+					"settings":
+					{
+						"buffer_size": 2658,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "m/wp-config.php",
+					"settings":
+					{
+						"buffer_size": 3126,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "Package Control Messages\n========================\n\nColor Highlighter\n-----------------\n\n\n  Color Highlighter v8.0 is released!\n\n  For more info about the plugin visit https://github.com/Monnoroch/ColorHighlighter.\n\n  Color Highlighter was developed for many years and features were added without consideration.\n  As a result it has plenty of bugs and code is completely unmaintainable.\n  Because of it, I've decided to rewrite the plugin from scratch using all the good programming practices I learned\n  over the years.\n\n  This is the first release of the new version and it might have some subtle bugs, especially on Windows and Mac, as I\n  don't have machines with these systems. If you find any bugs, please file them in\n  the bug tracker here: https://github.com/Monnoroch/ColorHighlighter/issues. I always appreciate your help and try to fix\n  problems as soon as possible.\n\n  The plugin is being developed by me alone in my spare time, so if you want to encourage me to build it\n  better and faster, donations as always welcome.\n\n  Thank you guys for your support, every little bit helps!",
+					"settings":
+					{
+						"buffer_size": 1094,
+						"line_ending": "Unix",
+						"name": "Package",
+						"read_only": true,
+						"scratch": true
+					}
+				},
+				{
+					"contents": "Package Control Messages\n========================\n\nEmmet\n-----\n\n  Emmet plugin installed\n\n  Emmet is a web-developer’s toolkit for boosting HTML & CSS code writing.\n\n  With Emmet, you can type expressions (abbreviations) similar to CSS selectors and convert them into code fragment with a single keystroke. For example, this abbreviation:\n\n  ul#nav>li.item$*4>a{Item $}\n\n  ...can be expanded into:\n\n  <ul id=\"nav\">\n      <li class=\"item1\"><a href=\"\">Item 1</a></li>\n      <li class=\"item2\"><a href=\"\">Item 2</a></li>\n      <li class=\"item3\"><a href=\"\">Item 3</a></li>\n      <li class=\"item4\"><a href=\"\">Item 4</a></li>\n  </ul>\n\n  Read more about Emmet for Sublime Text:\n  https://github.com/emmetio/sublime-text-plugin#readme\n\nBracketHighlighter\n------------------\n\n  # BracketHighlighter\n\n  Welcome to BracketHighlighter!\n\n  A restart of Sublime Text is recommended to ensure all dependencies get  \n  loaded properly.\n\n  For a quick start guide, please go to  \n  `Preferences->Package Settings->BracketHighlighter->Quick Start Guide`.\n\nSass\n----\n\n  Sass 2.0\n  ======================\n\n  Thank you for installing Sass for Sublime Text.\n\n  2.0 supports things like flex-box syntax, custom properties, function snippets\n  and more for both Sass and SCSS.\n  It is now also in line with the scope naming guidelines for Sublime Text 3.0,\n  highlighting should be very similar to CSS and LESS.\n\n  If something doesn't work for you let us know at:\n  https://github.com/braver/SublimeSass\n\n  1.x is still available as a different package: \"Syntax Highlighting for Sass\":\n  https://github.com/P233/Syntax-highlighting-for-Sass",
+					"settings":
+					{
+						"buffer_size": 1616,
 						"line_ending": "Windows",
-						"name": "Как работать со сканером AI-BOLIT из командной стр"
-					}
-				},
-				{
-					"file": "/E/Git/choco/wsudo/Readme.md",
-					"settings":
-					{
-						"buffer_size": 3130,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "powershell winget search php\n# powershell winget install \"Xampp\" --silent\npowershell winget install \"ApacheFriends.Xampp\" --silent\npowershell winget install \"CodeLite.CodeLite\" --silent\nwinget install \"OpenJS.NodeJS\" --silent\n#powershell winget install \"\" --silent\n#powershell winget install \"\" --silent\n\n\n## install chocolatey python visualstudio2019-workload-vctools\n    # https://chocolatey.org/packages/chocolatey\n    # https://chocolatey.org/packages/python\n    # https://chocolatey.org/packages/visualstudio2019-workload-vctools\n\"%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command Start-Process '%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe' -ArgumentList '-NoProfile -InputFormat None -ExecutionPolicy Bypass -Command [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString(''https://chocolatey.org/install.ps1'')); choco upgrade -y python visualstudio2019-workload-vctools; Read-Host ''Type ENTER to exit'' ' -Verb RunAs\n\n\n#####==========================================================\n# Get-SCPFolder\n# $credential = Get-Credential\n# Set-SCPFolder -ComputerName '....' -Credential $credential -LocalFolder \"D:\\temp\" -RemoteFolder \"/home/local/mynewfolder/printercontent\"\nwinget install \"Nodist.Nodist\" --silent\nwinget install \"OpenJS.NodeJS\" --silent\nwinget install \"NuGetPackageExplorer.NuGetPackageExplorer\" --silent\nInstall-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force\nInstall-Module -Name Posh-SSH\n\nwinget install \"Microsoft.PowerShell\" --silent\n#winget install \"Microsoft.WindowsTerminal\" --silent\n#winget install \"Microsoft.PowerShell-Preview\" --silent\nwinget install \"Microsoft.PowerShell-Preview-MSIX\" --silent\n\n",
-					"file": "/E/Git/ai-bolit/installPHPWinGet.ps1",
-					"file_size": 1111,
-					"file_write_time": 132520338772731077,
-					"settings":
-					{
-						"buffer_size": 1812,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Program Files/nodejs/npx.cmd",
-					"settings":
-					{
-						"buffer_size": 519,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Program Files/nodejs/install_tools.bat",
-					"settings":
-					{
-						"buffer_size": 2977,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "Package Control Messages\n========================\n\nPackageSync\n-----------\n\n      ____                __                          _____                    \n     / __ \\ ____ _ _____ / /__ ____ _ ____ _ ___     / ___/ __  __ ____   _____\n    / /_/ // __ `// ___// //_// __ `// __ `// _ \\    \\__ \\ / / / // __ \\ / ___/\n   / ____// /_/ // /__ / ,<  / /_/ // /_/ //  __/   ___/ // /_/ // / / // /__  \n  /_/     \\__,_/ \\___//_/|_| \\__,_/ \\__, / \\___/   /____/ \\__, //_/ /_/ \\___/  \n                                   /____/                /____/                \n\n  Store off-line backup of your packages & restore them on the same or any other machine.\n\n  Do note that PackageSync only syncs your packages list and your user settings.\n  But the actual installation of missing/new packages requires a working internet connection.\n\n  For details of the package & it's usage, please visit \n       ==========================================\n       https://github.com/utkarsh9891/PackageSync\n       ==========================================\n\n  Thank you!",
-					"settings":
-					{
-						"buffer_size": 1044,
-						"line_ending": "Windows",
-						"name": "Package Control Messages",
+						"name": "Package",
 						"read_only": true,
 						"scratch": true
 					}
@@ -289,7 +282,23 @@
 				"selected_items":
 				[
 					[
+						"Package Control: rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					],
+					[
 						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: insta",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: inst",
 						"Package Control: Install Package"
 					]
 				],
@@ -313,33 +322,28 @@
 			},
 			"expanded_folders":
 			[
-				"/E/Git",
-				"/E/Git/choco",
-				"/E/Git/choco/wsudo",
-				"/E/Git/OpenSSH",
-				"/E/Git/PS",
-				"/E/Git/rdpwrap",
-				"/E/Git/rdpwrap/bin",
-				"/E/Git/rdpwrap/res",
-				"/E/Git/winget-cli",
-				"/E/Git/winget-cli/releases",
-				"/E/Backups/SublimePackages"
+				"/E/project/webits/m.webits.com.ua"
 			],
 			"file_history":
 			[
-				"/E/Git/ai-bolit/installPHPWinGet.ps1"
+				"/E/project/webits/m/index.php",
+				"/E/project/webits/m/index.html",
+				"/E/project/webits/m/sshteslacityhostcomua.tar.gz",
+				"/E/project/webits/m/ssh.tesla.cityhost.com.ua.tar.gz",
+				"/E/project/webits/m/ftpsync.settings",
+				"/E/project/webits/Ai-Bolit.Win/site/70445_furnicom172/Furnicom_[v1.5.3]/furnicom/lib/class-tgm-plugin-activation.php",
+				"/E/project/webits/m/wp-config.php",
+				"/E/project/webits/Ai-Bolit.Win/site/70445_furnicom172/furnicom172/Help/assets/js/a.js"
 			],
 			"find":
 			{
-				"height": 25.0
+				"height": 28.0
 			},
 			"find_in_files":
 			{
-				"height": 104.0,
+				"height": 132.0,
 				"where_history":
 				[
-					"E:\\scripts",
-					"E:\\scripts\\EXAMPLEs"
 				]
 			},
 			"find_state":
@@ -347,9 +351,12 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"<EOM",
-					"<OEM",
-					"EOM"
+					"$c.leaksMemory.remove=function",
+					"\\$c.leaksMemory",
+					"$c.leaksMemory",
+					"}$c.leaksMemory",
+					"}$c.leaksMemory.remove=function",
+					"is->sanitize_key("
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -367,195 +374,143 @@
 			"groups":
 			[
 				{
-					"selected": 6,
+					"selected": 5,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/E/scripts/sh/asterisk/install.asterisk.sh",
+							"file": "m/ftpsync.settings",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 263,
+								"buffer_size": 4865,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										91,
-										91
+										1559,
+										1559
 									]
 								],
 								"settings":
 								{
-									"auto_name": "",
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+											"1":
+											[
+												3769,
+												3770
+											]
+										},
+										"icon":
+										{
+											"1":
+											[
+												"Packages/BracketHighlighter/icons/curly_bracket.png",
+												"region.purplish"
+											]
+										},
+										"open":
+										{
+											"1":
+											[
+												103,
+												104
+											]
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content"
+									],
+									"buffer_scroll_name": "dd72fad5",
+									"syntax": "Packages/FTPSync/Settings.tmLanguage",
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 11585.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 9,
+							"stack_index": 8,
 							"type": "text"
 						},
 						{
 							"buffer": 1,
-							"file": "/E/scripts/termux/4pda/install.01.sh",
+							"file": "m/index.php",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1439,
+								"buffer_size": 420,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										217,
-										154
-									]
-								],
-								"settings":
-								{
-									"auto_name": "",
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 5,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/E/scripts/termux/4pda/zshrc.sh",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 3047,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										2,
-										2
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 4,
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/E/Git/ai-bolit/readme.txt",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 4386,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										2526,
-										2526
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 512.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 3,
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/E/Git/ai-bolit/instruktion.txt",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 4253,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										619,
-										596
-									]
-								],
-								"settings":
-								{
-									"auto_name": "Как работать со сканером AI-BOLIT из командной стр",
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 120.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/E/Git/choco/wsudo/Readme.md",
-							"semi_transient": true,
-							"settings":
-							{
-								"buffer_size": 3130,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										576,
-										576
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 6,
-							"file": "/E/Git/ai-bolit/installPHPWinGet.ps1",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 1812,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1812,
-										1812
+										273,
+										273
 									]
 								],
 								"settings":
@@ -634,35 +589,8 @@
 										"bh_angle_close",
 										"bh_angle_content"
 									],
-									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 336.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 7,
-							"file": "/C/Program Files/nodejs/npx.cmd",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 519,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										404,
-										404
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+									"buffer_scroll_name": "289ea87d",
+									"syntax": "Packages/PHP/PHP.sublime-syntax"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -672,61 +600,766 @@
 							"type": "text"
 						},
 						{
-							"buffer": 8,
-							"file": "/C/Program Files/nodejs/install_tools.bat",
+							"buffer": 2,
+							"file": "m/wp-content/themes/furnicom/lib/plugin-requirement.php",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 2977,
+								"buffer_size": 5508,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2977,
-										2417
+										5007,
+										5007
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+											"1":
+											[
+												5040,
+												5041
+											]
+										},
+										"icon":
+										{
+											"1":
+											[
+												"Packages/BracketHighlighter/icons/round_bracket.png",
+												"region.yellowish"
+											]
+										},
+										"open":
+										{
+											"1":
+											[
+												4985,
+												4986
+											]
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content"
+									],
+									"buffer_scroll_name": "c43ca7d3",
+									"syntax": "Packages/PHP/PHP.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 528.0,
+								"translation.y": 1680.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 5,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "m/wp-content/themes/furnicom/style.css",
+							"semi_transient": true,
+							"settings":
+							{
+								"buffer_size": 782,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										271,
+										271
+									]
+								],
+								"settings":
+								{
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content"
+									],
+									"buffer_scroll_name": "1ddc83ac",
+									"color_scheme": "Packages/User/Color Highlighter/themes/MaterialMonokai.tmTheme",
+									"syntax": "Packages/CSS/CSS.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 6717.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 4,
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/E/project/credithouse/www.credithouse.com.ua/index.php",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 420,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										186,
+										186
+									]
+								],
+								"settings":
+								{
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content"
+									],
+									"buffer_scroll_name": "41fa69a6",
+									"syntax": "Packages/PHP/PHP.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 7,
 							"type": "text"
 						},
 						{
-							"buffer": 9,
+							"buffer": 5,
+							"file": "m/index.html",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1044,
+								"buffer_size": 2658,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1044,
-										1044
+										430,
+										430
+									]
+								],
+								"settings":
+								{
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+											"1":
+											[
+												367,
+												371
+											]
+										},
+										"icon":
+										{
+											"1":
+											[
+												"Packages/BracketHighlighter/icons/tag.png",
+												"region.orangish"
+											]
+										},
+										"open":
+										{
+											"1":
+											[
+												367,
+												371
+											]
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content"
+									],
+									"bs_sintax": "html",
+									"buffer_scroll_name": "4d3fe03d",
+									"syntax": "Packages/HTML/HTML.sublime-syntax",
+									"tab_size": 8,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "m/wp-config.php",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3126,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										52,
+										52
+									]
+								],
+								"settings":
+								{
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content"
+									],
+									"bs_sintax": "php",
+									"buffer_scroll_name": "5044183e",
+									"syntax": "Packages/PHP/PHP.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1094,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1094,
+										1094
 									]
 								],
 								"settings":
 								{
 									"auto_indent": false,
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content"
+									],
+									"bs_sintax": "plain text",
 									"syntax": "Packages/Text/Plain text.tmLanguage",
 									"tab_width": 2,
 									"word_wrap": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 144.0,
+								"translation.y": 1.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 8,
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1616,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										370,
+										370
+									]
+								],
+								"settings":
+								{
+									"auto_indent": false,
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content"
+									],
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 2,
+									"tab_width": 2,
+									"translate_tabs_to_spaces": true,
+									"word_wrap": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 193.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
 							"type": "text"
 						}
 					]
@@ -734,11 +1367,11 @@
 			],
 			"incremental_find":
 			{
-				"height": 25.0
+				"height": 28.0
 			},
 			"input":
 			{
-				"height": 39.0
+				"height": 54.0
 			},
 			"layout":
 			{
@@ -768,11 +1401,11 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,2,-32000,-32000,-1,-1,866,308,327,1559",
-			"project": "SCRIPTS_DIR.sublime-project",
+			"position": "0,0,1,-32000,-32000,-1,-1,620,40,83,1291",
+			"project": "m.webits.com.ua.sublime-project",
 			"replace":
 			{
-				"height": 46.0
+				"height": 52.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -810,21 +1443,21 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 277.0,
+			"side_bar_width": 285.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 5,
-			"workspace_name": "/E/!SavePROJECT/SCRIPTS_DIR.sublime-workspace"
+			"window_id": 8,
+			"workspace_name": "/E/project/webits/m.webits.com.ua.sublime-workspace"
 		}
 	],
 	"workspaces":
 	{
 		"recent_workspaces":
 		[
-			"/E/!SavePROJECT/SCRIPTS_DIR.sublime-workspace",
 			"/E/project/webits/m.webits.com.ua.sublime-workspace",
+			"/E/!SavePROJECT/SCRIPTS_DIR.sublime-workspace",
 			"/E/project/electroservice/electroservice+spare-parts.sublime-workspace"
 		]
 	}
