@@ -1,0 +1,1 @@
+{"description": "An opinionated todo-list plugin for Sublime Text editor (version 2 and 3)", "version": "2020.12.24.17.51.14", "url": "https://github.com/aziz/PlainTasks", "dependencies": [], "sublime_text": "*", "platforms": ["*"]}
