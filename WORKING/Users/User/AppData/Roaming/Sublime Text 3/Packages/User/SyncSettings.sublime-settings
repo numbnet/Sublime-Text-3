@@ -1,0 +1,15 @@
+{
+	"access_token": "dd10e3db03f653a704b20fd17530b24af1d9ca22",
+	"auto_upgrade": false,
+	"excluded_files":
+	[
+	],
+	"gist_id": "10b65fad09d1eeec95f4ff770ddd21c1",
+	"http_proxy": "",
+	"https_proxy": "",
+	"included_files":
+	[
+		"../../*.*",
+		"*"
+	]
+}

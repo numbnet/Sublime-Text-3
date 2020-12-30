@@ -1,0 +1,34 @@
+Thanks for installing Sync Settings
+
+With Sync Settings, you are able to synchronize your settings among multiple devices, and keep them updated.
+Sync Settings, is powered by Github-Gist, providing you a secure and reliable way to store your backups.
+
+Getting started
+
+1. Run `Sync Settings: Edit User Settings`
+2. **if** *Do you already have a gist?*
+    1. Copy `gist id` (`https://gist.github.com/<username>/<gist id>`) and put it in config file (`gist_id` property)
+    2. Run `Sync Settings: Download` command to retrieve your backup.
+3. **else**
+    1. Create an access token at https://github.com/settings/tokens/new with `gist` scope checked.
+    2. Put the token in the config file (`access_token` property)
+    3. Run `Sync Settings: Create and Upload` command
+
+Issues
+
+If you are experimenting an error or an unusual behavior, please let me know, reporting the error creating a issue on https://github.com/mfuentesg/SyncSettings/issues/new.
+Please, run `Show logs` command to complement the issue and find the bug faster.
+
+Btw, you are welcome to contribute whenever you want!
+
+
+Help me keep making awesome stuff.
+
+https://opencollective.com/syncsettings
+https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7XCNSKK5W7DKJ
+
+More information visit
+
+https://github.com/mfuentesg/SyncSettings
+
+Marcelo!
