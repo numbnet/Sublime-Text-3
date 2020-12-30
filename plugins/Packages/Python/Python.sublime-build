@@ -1,0 +1,19 @@
+{
+	"cmd": ["python", "-u", "$file"],
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"selector": "source.python",
+
+	"env": {"PYTHONIOENCODING": "utf-8"},
+
+	"windows": {
+		"cmd": ["py", "-u", "$file"],
+	},
+
+	"variants":
+	[
+		{
+			"name": "Syntax Check",
+			"shell_cmd": "python -m py_compile \"${file}\"",
+		}
+	]
+}
