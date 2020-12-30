@@ -1,0 +1,48 @@
+{
+	"version": 7,
+    /* this is used for allowing to use more than 1 colour scheme at the same time in different views */
+    "remember_color_scheme": true,
+    "remember_syntax": true,
+
+    /* allows to keep in sync bookmarks, marks or folds across cloned views */
+    "synch_bookmarks": true,
+    "synch_folds": true,
+    "synch_marks": true,
+
+    /* this allow to sync the scroll of the clones of a view */
+    "synch_scroll": false,
+
+    /* this allows you to stop restoring scroll in case of conflicting with some other package, example CTags */
+    "restore_scroll": true,
+
+    /* The line you work with is automatically the vertical center of the screen. */
+    "typewriter_scrolling": false,
+    "typewriter_scrolling_shift": "0", //shift the focused line by this number (positive or negative).
+    "typewriter_scrolling_follow_cursor_movement": true,
+
+    /* ST has animations for when scrolling, these are disabled by default */
+    "use_animations": false,
+
+    /* the same file, can have many different data saved depending the position of the file in the application (example file.txt in window1 has scroll line 30, file.txt in window2 has scroll in line 40) -
+        If you don't use cloned views, set this to false, to always restore the last scroll position */
+    "i_use_cloned_views": true,
+
+    "max_database_records": 800,
+
+    /* remembers the following view settings */
+    "remember_settings_list": ["spell_check"],
+
+    /* any syntax specific settings you want.. o_O (Note: lowercase syntax names)*/
+
+    "plain text": {
+        "synch_scroll": true
+    },
+
+    "python": {
+        "use_animations": true
+    },
+    /* etc */
+
+    "debug": false
+}
+

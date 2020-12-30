@@ -1,0 +1,48 @@
+{
+	"bootstrapped": true,
+	"channels":
+	[
+		"https://packagecontrol.io/channel_v3.json",
+		"https://packagecontrol.io/channel_v3.json"
+	],
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AlignTab",
+		"AutoFileName",
+		"Base Encoder",
+		"BracketHighlighter",
+		"Color Highlight",
+		"Color Highlighter",
+		"ColorPicker",
+		"CoolBase64",
+		"CSScomb",
+		"DlangAutoFileName",
+		"Emmet",
+		"FilterPipes",
+		"FTPSync",
+		"Gist",
+		"LESS",
+		"LocalizedMenu",
+		"Markdown Extended",
+		"Material Monokai",
+		"Okami – Adaptive Color Schemes",
+		"One Dark Material - Theme",
+		"Package Control",
+		"PackageSync",
+		"PlainTasks",
+		"PowerShell",
+		"Pretty JSON",
+		"Sass",
+		"SCSS",
+		"SFTP",
+		"SideBarEnhancements",
+		"Stylus",
+		"Sync Settings",
+		"Theme - Monokai Pro",
+		"Theme - One Dark",
+		"ZipContents"
+	]
+}

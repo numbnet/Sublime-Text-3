@@ -1,0 +1,59 @@
+[
+    {
+        "command": "new_file_at", 
+        "args": {
+            "dirs": []
+        }, 
+        "caption": "Новый файл"
+    }, 
+    {
+        "command": "rename_path", 
+        "args": {
+            "paths": []
+        }, 
+        "caption": "Переименовать…"
+    }, 
+    {
+        "command": "delete_file", 
+        "args": {
+            "files": []
+        }, 
+        "caption": "Удалить файл"
+    }, 
+    {
+        "command": "open_containing_folder", 
+        "args": {
+            "files": []
+        }, 
+        "caption": "Открыть папку файла…"
+    }, 
+    {
+        "id": "folder_commands", 
+        "caption": "-"
+    }, 
+    {
+        "command": "new_folder", 
+        "args": {
+            "dirs": []
+        }, 
+        "caption": "Новая папка…"
+    }, 
+    {
+        "command": "delete_folder", 
+        "args": {
+            "dirs": []
+        }, 
+        "caption": "Удалить папку"
+    }, 
+    {
+        "command": "find_in_folder", 
+        "args": {
+            "dirs": []
+        }, 
+        "caption": "Найти в папке…"
+    }, 
+    {
+        "id": "end", 
+        "caption": "-"
+    }
+]

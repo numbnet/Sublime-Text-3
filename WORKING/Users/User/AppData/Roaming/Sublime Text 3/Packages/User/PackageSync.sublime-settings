@@ -1,0 +1,32 @@
+{
+	"debug": true,
+	"folder_backup_path": "C:\\Git\\sublime_backup\\SublimePackagesBackup",
+	"ignore_dirs":
+	[
+	],
+	"ignore_files":
+	[
+		"*.DS_Store",
+		"*.last-run"
+	],
+	"include_files":
+	[
+		"*.sublime-*",
+		"*.tmLanguage",
+		"*.tmTheme",
+		"*.tmPreferences",
+		"*.json",
+		"*.png",
+		"*.txt",
+		"*.py",
+		"*.md"
+	],
+	"list_backup_path": "C:\\Git\\sublime_backup\\SublimePackagesList.txt",
+	"online_sync_enabled": true,
+	"online_sync_folder": "C:\\Git\\sublime_backup\\online_sync",
+	"online_sync_interval": 5,
+	"preserve_packages": true,
+	"prompt_for_location": true,
+	"sync_package_sync_settings": false,
+	"zip_backup_path": "C:\\Git\\sublime_backup\\SublimePackagesBackup.zip"
+}

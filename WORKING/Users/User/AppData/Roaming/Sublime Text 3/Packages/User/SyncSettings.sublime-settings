@@ -1,0 +1,20 @@
+{
+	"access_token": "3097a392574b7647e8690b053063bc2dc8bc8fb5",
+	"auto_upgrade": false,
+	"excluded_files":
+	[
+		"*.DS_Store*",
+		"*.exe",
+		"*.Trashes",
+		"*ehthumbs.db",
+		"*Thumbs.db"
+	],
+	"gist_id": "10b65fad09d1eeec95f4ff770ddd21c1",
+	"http_proxy": "",
+	"https_proxy": "",
+	"included_files":
+	[
+		"../../*.*",
+		"*.sublime-settings"
+	]
+}
